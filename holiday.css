@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    
+}
+.header{
+    height: 100vh;
+    width: 100%;
+    background: url(sky.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    overflow-x: hidden;
+    position:relative;
+}
+nav{
+    display: flex;
+    padding: 20px 100px;
+
+}
+nav img {
+    height: 40px;
+    width: 150px;
+}
+nav ul{
+    text-align: right;
+    display: inline;
+    list-style: none;
+    flex: 1;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 20px;
+    
+}
+nav ul li:hover{
+    cursor: pointer;
+    color: black;
+    border: #fff;
+
+}
+
+.main-text{
+    margin: 15px auto;
+    text-align: center;
+}
+.main-text h1{
+    font-size: 50px;
+}
+.main-text .button{
+    text-decoration: none;
+    display: block;
+    width: 140px;
+    height: 35px;
+    margin: 25px auto;
+    color: #fff;
+    line-height: 35px;
+    border: 1px solid #fff;
+
+}
+.button:hover{
+    background: #fff;
+    color: black;
+    transition: 0.5s;
+}
+.botom-img{
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+    animation: animate 8s linear infinite;    
+}
+  .sun{
+    position:absolute;
+    top: 10em;
+    left: 5em;
+    width: 10em;
+    height: 10em;
+    background-color: yellow;
+    border-radius: 50%;
+    box-shadow: 0 0 3em rgb(242, 17, 17);
+}
+@keyframes animate{
+    0%{
+        left: 0;
+    }
+    100%{
+        left:-1900px
+        }
+    }
+
+    @keyframes slideInLeft{
+      from{
+        transform: translateX(-500px);
+      }
+      to {
+        transform: translateX();
+      }
+    }
+    .sun {
+      animation-name: slideInLeft;
+      animation-duration: 3s;
+      animation-delay: 0.5s;
+      animation-direction:normal;}
+    
